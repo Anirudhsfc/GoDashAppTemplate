@@ -41,6 +41,13 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/SCB.png
+    - assets/images/logo.gif
+    - assets/images/BiometricAuthLogo.png
+  
+  fonts:
+    - family: opensans
+      fonts:
+        - asset: fonts/opensans-light.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

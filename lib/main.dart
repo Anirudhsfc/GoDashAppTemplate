@@ -13,11 +13,11 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+
     Future.delayed(
       Duration(seconds: 3),
       () {
@@ -35,7 +35,12 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/images/SCB.png'),
+        child: AnimatedContainer(
+          child: Image.asset('assets/images/SCB.png'),
+          duration: Duration(seconds: 1),
+          
+          
+        ),
       ),
     );
   }
