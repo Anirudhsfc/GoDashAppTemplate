@@ -6,6 +6,10 @@ class AccountDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(
+          'My Banking',
+           style: TextStyle(fontFamily: 'opensans', color: Colors.white),
+          ),
         backgroundColor: Color.fromRGBO(186, 228, 245, 1.0),
         elevation: 0.0,
       ),
@@ -61,35 +65,81 @@ class AccountDetails extends StatelessWidget {
             Expanded(
               child: Container(
                 color: Color.fromRGBO(186, 228, 245, 1.0),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Image.asset(
-                    'assets/images/logo.gif',
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                margin: EdgeInsets.all(20.0),
-                child: Text(
-                  "Log In With CyberBanking Details",
-                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0),
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                margin: EdgeInsets.only(left: 30.0, right: 30.0, top: 10.0),
-                child: TextField(
-                  obscureText: false,
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.account_circle,
-                      color: Color.fromRGBO(186, 228, 245, 1.0),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "Total Balance",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
+                        ),
+                      ),
                     ),
-                    hintText: 'Account No./Username',
-                  ),
+                    Container(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "(USD Equivalent)",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "USD 7,309.18",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 30.0, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ]
+                )
+              ),
+            ),
+            Container(
+              child: Container(
+                margin: EdgeInsets.only(top: 10.0),
+                child: Text(
+                  "Account                               Current Balance",
+                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0)),
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                color: Color.fromRGBO(186, 228, 245, 1.0),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "Total Balance",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "(USD Equivalent)",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "USD 7,309.18",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 30.0, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ]
                 ),
               ),
             ),
