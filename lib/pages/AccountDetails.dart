@@ -103,39 +103,33 @@ class AccountDetails extends StatelessWidget {
                 margin: EdgeInsets.only(top: 10.0),
                 child: Text(
                   "Account                               Current Balance",
-                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0)),
+                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),
                 ),
               ),
             ),
-            Expanded(
+            Container(
               child: Container(
-                color: Color.fromRGBO(186, 228, 245, 1.0),
+                margin: EdgeInsets.only(top: 10.0),
+                padding: EdgeInsets.only(top: 20.0, bottom: 20.0),
+                color: Color.fromRGBO(230, 230, 230, 1.0),
                 child: Column(
                   children: <Widget>[
                     Container(
+                      padding: EdgeInsets.only(left: 10.0),
                       child: Align(
-                        alignment: Alignment.center,
+                        alignment: Alignment.centerLeft,
                         child: Text(
-                          "Total Balance",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
-                        ),
+                          "Account Number",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),                        ),
                       ),
                     ),
                     Container(
+                      padding: EdgeInsets.only(left: 10.0),
                       child: Align(
-                        alignment: Alignment.center,
+                        alignment: Alignment.centerLeft,
                         child: Text(
-                          "(USD Equivalent)",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, color: Colors.white),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "USD 7,309.18",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 30.0, color: Colors.white),
+                          "015-176-88-***-50-7",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
                         ),
                       ),
                     ),
