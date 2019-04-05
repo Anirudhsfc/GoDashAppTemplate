@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -11,6 +12,16 @@ class LoginPage extends StatelessWidget {
       drawer: Drawer(
         child: ListView(
           children: <Widget>[
+            Container(
+              height: 155.0,
+              color: Color.fromRGBO(186, 228, 245, 1.0),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Image.asset(
+                  'assets/images/logo.gif',
+                ),
+              ),
+            ),
             ListTile(
               leading: Icon(Icons.change_history),
               title: Text("List1"),
@@ -112,32 +123,89 @@ class LoginPage extends StatelessWidget {
               margin: EdgeInsets.all(10.0),
               child: SizedBox(
                 width: double.infinity,
-                child: RaisedButton(
-                  elevation: 15.0,
-                  splashColor: Color.fromRGBO(186, 228, 245, 0.5),
-                  color: Color.fromRGBO(186, 228, 245, 1.0),
-                  onPressed: () => {},
 
-                  // onPressed: () => {Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (BuildContext context) => HomePage(),
-                  //       ),
-                  //     ),
-                  //     },
-                  child: Text('Log In'),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(vertical: 16.0),
+                  child: Material(
+                    borderRadius: BorderRadius.circular(30.0),
+                    shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
+                    color: Color.fromRGBO(186, 228, 245, 1.0),
+                    elevation: 5.0,
+                    child: MaterialButton(
+                      child: Text(
+                        "Log In",
+                        style:
+                            TextStyle(fontFamily: 'opensans', fontSize: 18.0),
+                      ),
+                      onPressed: () {},
+                      minWidth: 200.0,
+                      height: 42.0,
+                    ),
+                  ),
+                ),
+                // onPressed: () => {Navigator.push(
+                //       context,
+                //       MaterialPageRoute(
+                //         builder: (BuildContext context) => HomePage(),
+                //       ),
+                //     ),
+                //     },
+                // child: Text('Log In',),
+              ),
+            ),
+            Container(
+              child: Padding(
+                padding: EdgeInsets.all(0.0),
+                child: Material(
+                  borderRadius: BorderRadius.circular(30.0),
+                  shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
+                  elevation: 5.0,
+                  child: MaterialButton(
+                    onPressed: () {
+                      showDialog(
+                          context: context,
+                          child: CupertinoAlertDialog(
+                            title: Column(
+                              children: <Widget>[
+                                Image.asset(
+                                  'assets/images/BiometricAuthLogo.png',
+                                  height: 40.0,
+                                ),
+                                Text("Touch ID for"),
+                                Text("SCB Login"),
+                                Text("Authenticate with Touch ID"),
+                              ],
+                            ),
+                            actions: <Widget>[
+                              FlatButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text(
+                                  "Cancel",
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(20, 126, 251, 1.0)),
+                                ),
+                              )
+                            ],
+                          ));
+                    },
+                    child: Image.asset(
+                      'assets/images/BiometricAuthLogo.png',
+                      height: 40.0,
+                    ),
+                  ),
                 ),
               ),
             ),
             Container(
-              child: Image.asset(
-                'assets/images/BiometricAuthLogo.png',
-                height: 40.0,
-              ),
-            ),
-            Container(
               margin: EdgeInsets.all(10.0),
-              child: SizedBox(child: Text("Biometric Authentication Login")),
+              child: SizedBox(
+                child: Text(
+                  "Biometric Authentication Login",
+                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0),
+                ),
+              ),
             ),
           ],
         ),
