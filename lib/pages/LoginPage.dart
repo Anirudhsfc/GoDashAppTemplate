@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import './AccountDetails.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -137,7 +140,14 @@ class LoginPage extends StatelessWidget {
                         style:
                             TextStyle(fontFamily: 'opensans', fontSize: 18.0),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                         Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => AccountDetails(),
+                              ),
+                            );
+                      },
                       minWidth: 200.0,
                       height: 42.0,
                     ),
@@ -162,33 +172,79 @@ class LoginPage extends StatelessWidget {
                   elevation: 5.0,
                   child: MaterialButton(
                     onPressed: () {
-                      showDialog(
-                          context: context,
-                          child: CupertinoAlertDialog(
-                            title: Column(
-                              children: <Widget>[
-                                Image.asset(
-                                  'assets/images/BiometricAuthLogo.png',
-                                  height: 40.0,
-                                ),
-                                Text("Touch ID for"),
-                                Text("SCB Login"),
-                                Text("Authenticate with Touch ID"),
+                      // Future.delayed(Duration(seconds: 5), () {
+
+                      //   Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => AccountDetails(),
+                      //     ),
+                      //   );
+                      // });
+                      Future.delayed(
+                        Duration(seconds: 2),
+                        () {
+                          Future.delayed(Duration(seconds: 2), () {
+                            showDialog();
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => AccountDetails(),
+                              ),
+                            );
+                          });
+                          showDialog(
+                            context: context,
+                            child: CupertinoAlertDialog(
+                              title: Column(
+                                children: <Widget>[
+                                  Image.asset(
+                                    'assets/images/BiometricAuthLogo.png',
+                                    height: 40.0,
+                                  ),
+                                  Text("Verified"),
+                                ],
+                              ),
+                              actions: <Widget>[
+                                FlatButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: Text(""),
+                                )
                               ],
                             ),
-                            actions: <Widget>[
-                              FlatButton(
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
-                                child: Text(
-                                  "Cancel",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(20, 126, 251, 1.0)),
-                                ),
-                              )
+                          );
+                        },
+                      );
+                      showDialog(
+                        context: context,
+                        child: CupertinoAlertDialog(
+                          title: Column(
+                            children: <Widget>[
+                              Image.asset(
+                                'assets/images/BiometricAuthLogo.png',
+                                height: 40.0,
+                              ),
+                              Text("Touch ID for"),
+                              Text("SCB Login"),
+                              Text("Authenticate with Touch ID"),
                             ],
-                          ));
+                          ),
+                          actions: <Widget>[
+                            FlatButton(
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              child: Text(
+                                "Cancel",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(20, 126, 251, 1.0)),
+                              ),
+                            )
+                          ],
+                        ),
+                      );
                     },
                     child: Image.asset(
                       'assets/images/BiometricAuthLogo.png',
