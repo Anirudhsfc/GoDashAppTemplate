@@ -231,7 +231,7 @@ class AccountDetails extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: Text(
-                    "Identity: John",
+                    "Identity: John Andrews",
                     style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
                   ),
                 ),

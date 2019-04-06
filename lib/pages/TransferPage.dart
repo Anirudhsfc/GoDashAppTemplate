@@ -66,12 +66,14 @@ class TransferPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Expanded(
+              flex: 2,
               child: Container(
                 color: Color.fromRGBO(186, 228, 245, 1.0),
                 child: Column(
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.only(left: 85.0, right: 85.0),
+                      margin: EdgeInsets.only(left: 85.0, right: 85.0, top: 15.0),
+                      padding: EdgeInsets.only(left :10.0, right: 10.0, top: 2.0, bottom: 2.0),
                       decoration: const BoxDecoration(
                         border: Border(
                           bottom: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
@@ -79,25 +81,27 @@ class TransferPage extends StatelessWidget {
                           right: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
                           top: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
                           ),
+                          borderRadius: BorderRadius.all(const Radius.circular(30.0))
                       ),
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
                           "Frequent Transfers",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 17.0, color: Colors.white),
                         ),
                       ),
                     ),
-                    Container(
+                    Expanded(
+                      // margin: EdgeInsets.only(top: 30.0),
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
                           "99",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 35.0, color: Colors.white),
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 35.0, color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
-                    Container(
+                    Expanded(
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
@@ -119,359 +123,196 @@ class TransferPage extends StatelessWidget {
             //     ),
             //   ),
             // ),
-            Container(
+            Expanded(
+              flex: 3,
               child: Container(
                 margin: EdgeInsets.only(top: 10.0),
                 padding: EdgeInsets.only(left: 15.0, right: 15.0),
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      // padding: EdgeInsets.only(left: 10.0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "Account",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),                        ),
-                      ),
-                    ),
-                    Expanded(
-                      // padding: EdgeInsets.only(left: 10.0),
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                          "Current Balance",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
-                  ]
-                ),
-              ),
-            ),
-            Container(
-              child: Container(
-                margin: EdgeInsets.only(top: 12.0),
-                padding: EdgeInsets.only(top: 20.0, bottom: 20.0),
-                decoration: const BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
-                    ),
-                    color: Color.fromRGBO(245, 245, 245, 1.0),
-                ),
                 child: Column(
                   children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.only(left: 10.0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "Account Number",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),                        ),
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.only(left: 10.0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "025-342-87-***-40-7",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
-                        ),
-                      ),
-                    ),
-                  ]
-                ),
-              ),
-            ),
-            Container(
-              child: Container(
-                padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right:15.0),
-                decoration: const BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
-                    ),
-                ),
-                child: Row(
-                  children: <Widget>[
                     Expanded(
-                      // padding: EdgeInsets.only(left: 10.0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          "Savings Account",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),                        ),
-                      ),
-                    ),
-                    Expanded(
-                      // padding: EdgeInsets.only(left: 10.0),
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                          "CAD 7,309.18",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
-                  ]
-                ),
-              ),
-            ),
-            Container(
-              child: Container(
-                padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
-                decoration: const BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
-                    ),
-                ),
-                child: Text(
-                  "The information is for reference and should not be regarded as a balance confirmation.",
-                  style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
-                  textAlign: TextAlign.justify,
-                ),
-              ),
-            ),
-            Container(
-              child: Container(
-                padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
-                decoration: const BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
-                    ),
-                ),
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: Text(
-                    "Identity: John",
-                    style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              child: Container(
-                padding: EdgeInsets.only(top: 17.0, bottom: 11.0, left: 15.0, right: 15.0),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Quick Access",
-                    style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                padding: EdgeInsets.only(left: 12.0, right: 12.0),
-                child: Column(
-                  children: <Widget>[
-                    Container(
                       child: Row(
                         children: <Widget>[
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) => TransferPage(),
-                                          ),
-                                        );
-                                  },
-                                  child: Icon(
-                                    Icons.attach_money,
-                                    size: 50.0,
-                                    color: Color.fromRGBO(0, 230, 118, 1.0),
-                                  )
-                                ),
-                                Container(
-                                  padding: EdgeInsets.only(top: 5.0),
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "Transfers",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
+                          Container(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "From",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
+                            ),
                           ),
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.credit_card,
-                                    size: 50.0,
-                                    color: Color.fromRGBO(255, 215, 64, 1.0),
-                                  )
-                                ),
-                                Container(
-                                  padding: EdgeInsets.only(top: 5.0),
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "Credit Cards",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
+                          Container(
+                            padding: EdgeInsets.only(left: 100.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Savings Account (025-",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
+                              ),
+                            ),
                           ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
                         ]
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.only(top: 15.0, bottom: 7.0),
+                    Expanded(
                       child: Row(
                         children: <Widget>[
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.account_balance,
-                                    size: 50.0,
-                                    color: Color.fromRGBO(255, 116, 116, 1.0),
-                                  )
-                                ),
-                                Container(
-                                  padding: EdgeInsets.only(top: 5.0),
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "Loans",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
+                          Container(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Currency",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
+                            ),
                           ),
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 50.0,
-                                    color: Color.fromRGBO(178, 112, 0, 1.0),
-                                  )
-                                ),
-                                Container(
-                                  padding: EdgeInsets.only(top: 5.0),
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
+                          Container(
+                            padding: EdgeInsets.only(left: 70.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "CAD",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
+                              ),
+                            ),
                           ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
+                        ]
+                      ),
+                    ),
+                    Expanded(
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "To",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(left: 130.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Savings Account (049-",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ]
+                      ),
+                    ),
+                    Expanded(
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Currency",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(left: 70.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                "Euro",
+                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
                         ]
                       ),
                     ),
                   ]
-                )
+                ),
+              ),
+            ),
+            // Expanded(
+            //   child: Align(
+            //     alignment: Alignment.centerLeft,
+            //     child: Text(
+            //       "Euro",
+            //       style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
+            //     ),
+            //   ),
+            // ),
+            Container(
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    // margin: EdgeInsets.all(10.0),
+                    child: SizedBox(
+                      width: double.infinity,
+
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16.0),
+                        child: Material(
+                          // borderRadius: BorderRadius.circular(30.0),
+                          shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
+                          color: Color.fromRGBO(230, 230, 230, 1.0),
+                          elevation: 5.0,
+                          child: MaterialButton(
+                            child: Text(
+                              "Cancel",
+                              style:
+                                  TextStyle(fontFamily: 'opensans', fontSize: 18.0),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => AccountDetails(),
+                                    ),
+                                  );
+                            },
+                            minWidth: 200.0,
+                            height: 42.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    // margin: EdgeInsets.all(10.0),
+                    child: SizedBox(
+                      width: double.infinity,
+
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16.0),
+                        child: Material(
+                          // borderRadius: BorderRadius.circular(30.0),
+                          shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
+                          color: Color.fromRGBO(186, 228, 245, 1.0),
+                          elevation: 5.0,
+                          child: MaterialButton(
+                            child: Text(
+                              "Submit",
+                              style:
+                                  TextStyle(fontFamily: 'opensans', fontSize: 18.0),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => AccountDetails(),
+                                    ),
+                                  );
+                            },
+                            minWidth: 200.0,
+                            height: 42.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ]
               ),
             ),
           ],
