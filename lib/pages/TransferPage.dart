@@ -1,14 +1,16 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import './TransferPage.dart';
+import './AccountDetails.dart';
 
-class AccountDetails extends StatelessWidget {
+class TransferPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'My Banking',
+          'Transfers',
            style: TextStyle(fontFamily: 'opensans', color: Colors.white),
           ),
         backgroundColor: Color.fromRGBO(186, 228, 245, 1.0),
@@ -69,10 +71,19 @@ class AccountDetails extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Container(
+                      margin: EdgeInsets.only(left: 85.0, right: 85.0),
+                      decoration: const BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+                          left: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+                          right: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+                          top: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+                          ),
+                      ),
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "Total Balance",
+                          "Frequent Transfers",
                           style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
                         ),
                       ),
@@ -81,17 +92,17 @@ class AccountDetails extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "(CAD Equivalent)",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, color: Colors.white),
+                          "99",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 35.0, color: Colors.white),
                         ),
                       ),
                     ),
-                    Expanded(
+                    Container(
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "CAD 7,309.18",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 30.0, color: Colors.white),
+                          "CAD >",
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
                         ),
                       ),
                     ),
