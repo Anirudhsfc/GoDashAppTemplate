@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import './LoginPage.dart';
 
 class AccountDetails extends StatelessWidget {
   @override
@@ -259,19 +260,29 @@ class AccountDetails extends StatelessWidget {
                           Expanded(
                             child: Column(
                               children: <Widget>[
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => LoginPage(),
+                                          ),
+                                        );
+                                  },
                                   child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
+                                    Icons.attach_money,
+                                    size: 50.0,
+                                    color: Color.fromRGBO(0, 230, 118, 1.0),
                                   )
                                 ),
                                 Container(
+                                  padding: EdgeInsets.only(top: 5.0),
                                   alignment: Alignment.center,
                                   child: Align(
                                     alignment: Alignment.center,
                                     child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                                      "Transfers",
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
@@ -283,67 +294,69 @@ class AccountDetails extends StatelessWidget {
                               children: <Widget>[
                                 Container(
                                   child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
+                                    Icons.credit_card,
+                                    size: 50.0,
+                                    color: Color.fromRGBO(255, 215, 64, 1.0),
                                   )
                                 ),
                                 Container(
+                                  padding: EdgeInsets.only(top: 5.0),
                                   alignment: Alignment.center,
                                   child: Align(
                                     alignment: Alignment.center,
                                     child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                                      "Credit Cards",
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
                               ]
                             )
                           ),
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
-                                  )
-                                ),
-                                Container(
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
-                          ),
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
-                                  )
-                                ),
-                                Container(
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
-                          ),
+                          // Expanded(
+                          //   child: Column(
+                          //     children: <Widget>[
+                          //       Container(
+                          //         child: Icon(
+                          //           Icons.account_balance_wallet,
+                          //           size: 40.0,
+                          //         )
+                          //       ),
+                          //       Container(
+                          //         alignment: Alignment.center,
+                          //         child: Align(
+                          //           alignment: Alignment.center,
+                          //           child: Text(
+                          //             "My Account",
+                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                          //           ),
+                          //         ),
+                          //       )
+                          //     ]
+                          //   )
+                          // ),
+                          // Expanded(
+                          //   child: Column(
+                          //     children: <Widget>[
+                          //       Container(
+                          //         child: Icon(
+                          //           Icons.account_balance_wallet,
+                          //           size: 40.0,
+                          //         )
+                          //       ),
+                          //       Container(
+                          //         alignment: Alignment.center,
+                          //         child: Align(
+                          //           alignment: Alignment.center,
+                          //           child: Text(
+                          //             "My Account",
+                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                          //           ),
+                          //         ),
+                          //       )
+                          //     ]
+                          //   )
+                          // ),
                         ]
                       ),
                     ),
@@ -356,17 +369,19 @@ class AccountDetails extends StatelessWidget {
                               children: <Widget>[
                                 Container(
                                   child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
+                                    Icons.account_balance,
+                                    size: 50.0,
+                                    color: Color.fromRGBO(255, 116, 116, 1.0),
                                   )
                                 ),
                                 Container(
+                                  padding: EdgeInsets.only(top: 5.0),
                                   alignment: Alignment.center,
                                   child: Align(
                                     alignment: Alignment.center,
                                     child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                                      "Loans",
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
@@ -379,125 +394,73 @@ class AccountDetails extends StatelessWidget {
                                 Container(
                                   child: Icon(
                                     Icons.account_balance_wallet,
-                                    size: 40.0,
+                                    size: 50.0,
+                                    color: Color.fromRGBO(178, 112, 0, 1.0),
                                   )
                                 ),
                                 Container(
+                                  padding: EdgeInsets.only(top: 5.0),
                                   alignment: Alignment.center,
                                   child: Align(
                                     alignment: Alignment.center,
                                     child: Text(
                                       "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
                               ]
                             )
                           ),
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
-                                  )
-                                ),
-                                Container(
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
-                          ),
-                          Expanded(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  child: Icon(
-                                    Icons.account_balance_wallet,
-                                    size: 40.0,
-                                  )
-                                ),
-                                Container(
-                                  alignment: Alignment.center,
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                )
-                              ]
-                            )
-                          ),
+                          // Expanded(
+                          //   child: Column(
+                          //     children: <Widget>[
+                          //       Container(
+                          //         child: Icon(
+                          //           Icons.account_balance_wallet,
+                          //           size: 40.0,
+                          //         )
+                          //       ),
+                          //       Container(
+                          //         alignment: Alignment.center,
+                          //         child: Align(
+                          //           alignment: Alignment.center,
+                          //           child: Text(
+                          //             "My Account",
+                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                          //           ),
+                          //         ),
+                          //       )
+                          //     ]
+                          //   )
+                          // ),
+                          // Expanded(
+                          //   child: Column(
+                          //     children: <Widget>[
+                          //       Container(
+                          //         child: Icon(
+                          //           Icons.account_balance_wallet,
+                          //           size: 40.0,
+                          //         )
+                          //       ),
+                          //       Container(
+                          //         alignment: Alignment.center,
+                          //         child: Align(
+                          //           alignment: Alignment.center,
+                          //           child: Text(
+                          //             "My Account",
+                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
+                          //           ),
+                          //         ),
+                          //       )
+                          //     ]
+                          //   )
+                          // ),
                         ]
                       ),
                     ),
                   ]
                 )
-              ),
-            ),
-            Container(
-              child: Padding(
-                padding: EdgeInsets.all(0.0),
-                child: Material(
-                  borderRadius: BorderRadius.circular(30.0),
-                  shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
-                  elevation: 5.0,
-                  child: MaterialButton(
-                    onPressed: () {
-                      showDialog(
-                          context: context,
-                          child: CupertinoAlertDialog(
-                            title: Column(
-                              children: <Widget>[
-                                Image.asset(
-                                  'assets/images/BiometricAuthLogo.png',
-                                  height: 40.0,
-                                ),
-                                Text("Touch ID for"),
-                                Text("SCB Login"),
-                                Text("Authenticate with Touch ID"),
-                              ],
-                            ),
-                            actions: <Widget>[
-                              FlatButton(
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
-                                child: Text(
-                                  "Cancel",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(20, 126, 251, 1.0)),
-                                ),
-                              )
-                            ],
-                          ));
-                    },
-                    child: Image.asset(
-                      'assets/images/BiometricAuthLogo.png',
-                      height: 40.0,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(10.0),
-              child: SizedBox(
-                child: Text(
-                  "Biometric Authentication Login",
-                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0),
-                ),
               ),
             ),
           ],
