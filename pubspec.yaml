@@ -43,6 +43,7 @@ flutter:
     - assets/images/SCB.png
     - assets/images/logo.gif
     - assets/images/BiometricAuthLogo.png
+    - assets/images/fingerprint.gif
   
   fonts:
     - family: opensans

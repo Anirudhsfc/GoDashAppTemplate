@@ -182,39 +182,40 @@ class LoginPage extends StatelessWidget {
                       //   );
                       // });
                       Future.delayed(
-                        Duration(seconds: 2),
+                        Duration(seconds: 3),
                         () {
-                          Future.delayed(Duration(seconds: 2), () {
-                            showDialog();
+                         
+                            
+                            
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => AccountDetails(),
                               ),
                             );
-                          });
-                          showDialog(
-                            context: context,
-                            child: CupertinoAlertDialog(
-                              title: Column(
-                                children: <Widget>[
-                                  Image.asset(
-                                    'assets/images/BiometricAuthLogo.png',
-                                    height: 40.0,
-                                  ),
-                                  Text("Verified"),
-                                ],
-                              ),
-                              actions: <Widget>[
-                                FlatButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(""),
-                                )
-                              ],
-                            ),
-                          );
+                          
+                          // showDialog(
+                          //   context: context,
+                          //   child: CupertinoAlertDialog(
+                          //     title: Column(
+                          //       children: <Widget>[
+                          //         Image.asset(
+                          //           'assets/images/BiometricAuthLogo.png',
+                          //           height: 40.0,
+                          //         ),
+                          //         Text("Verified"),
+                          //       ],
+                          //     ),
+                          //     actions: <Widget>[
+                          //       FlatButton(
+                          //         onPressed: () {
+                          //           Navigator.of(context).pop();
+                          //         },
+                          //         child: Text(""),
+                          //       )
+                          //     ],
+                          //   ),
+                          // );
                         },
                       );
                       showDialog(
@@ -223,7 +224,7 @@ class LoginPage extends StatelessWidget {
                           title: Column(
                             children: <Widget>[
                               Image.asset(
-                                'assets/images/BiometricAuthLogo.png',
+                                'assets/images/fingerprint.gif',
                                 height: 40.0,
                               ),
                               Text("Touch ID for"),
