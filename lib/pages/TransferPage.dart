@@ -5,6 +5,54 @@ import 'package:flutter/cupertino.dart';
 import './AccountDetails.dart';
 
 class TransferPage extends StatelessWidget {
+  final money = Container(
+    margin: EdgeInsets.only(left: 85.0, right: 105.0, top: 15.0),
+    padding: EdgeInsets.only(left: 10.0, right: 10.0, top: 2.0, bottom: 2.0),
+    // decoration: const BoxDecoration(
+    //   border: Border(
+    //     bottom: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+    //     left: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+    //     right: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+    //     top: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+    //   ),
+    //   borderRadius: BorderRadius.all(
+    //     const Radius.circular(30.0),
+    //   ),
+    // ),
+    child: Align(
+      alignment: Alignment.center,
+      child: TextField(
+        autofocus: false,
+        decoration: InputDecoration(
+          hintText: 'Transfer Amount',
+          hintStyle: TextStyle(
+            color: Colors.white,
+            fontFamily: 'opensans',
+          ),
+          contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(30.0),
+            borderSide: BorderSide(
+                color: Colors.white, width: 1.0, style: BorderStyle.none),
+          ),
+        ),
+      ),
+    ),
+  );
+  final amount = Align(
+    alignment: Alignment.center,
+    child: TextFormField(
+      keyboardType: TextInputType.number,
+      autofocus: false,
+      decoration: InputDecoration(
+        hintText: 'Amount To Transfer',
+        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(30.0),
+            borderSide: BorderSide(color: Color.fromRGBO(186, 228, 245, 0.5))),
+      ),
+    ),
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,8 +116,9 @@ class TransferPage extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                  color: Color.fromRGBO(186, 228, 245, 1.0),
-                  child: Column(children: <Widget>[
+                color: Color.fromRGBO(186, 228, 245, 1.0),
+                child: Column(
+                  children: <Widget>[
                     Container(
                       margin:
                           EdgeInsets.only(left: 85.0, right: 85.0, top: 15.0),
@@ -103,29 +152,46 @@ class TransferPage extends StatelessWidget {
                       // margin: EdgeInsets.only(top: 30.0),
                       child: Align(
                         alignment: Alignment.center,
-                        child: Text(
-                          "99",
-                          style: TextStyle(
-                              fontFamily: 'opensans',
-                              fontSize: 35.0,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold),
-                        ),
+
+                        child: money,
+                        // child: TextField(
+                        //   obscureText: false,
+                        //   decoration: InputDecoration(
+                        //     prefixIcon: Icon(
+                        //       Icons.account_circle,
+                        //       color: Color.fromRGBO(186, 228, 245, 1.0),
+                        //     ),
+                        //     hintText: 'Enter the Amount you want to',
+                        //   ),
+                        // ),
+                        // child: Text(
+                        //   "99",
+                        //   style: TextStyle(
+                        //       fontFamily: 'opensans',
+                        //       fontSize: 35.0,
+                        //       color: Colors.white,
+                        //       fontWeight: FontWeight.bold),
+                        // ),
                       ),
                     ),
                     Expanded(
-                      child: Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "CAD >",
-                          style: TextStyle(
-                              fontFamily: 'opensans',
-                              fontSize: 24.0,
-                              color: Colors.white),
+                      child: Container(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "CAD >",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 20.0,
+                                color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
-                  ])),
+                  ],
+                ),
+              ),
             ),
             // Container(
             //   child: Container(
@@ -350,10 +416,10 @@ class TransferPage extends StatelessWidget {
                               child: CupertinoAlertDialog(
                                 title: Column(
                                   children: <Widget>[
-                                     Image.asset(
-                                'assets/images/verified.gif',
-                                height: 60.0,
-                              ),
+                                    Image.asset(
+                                      'assets/images/verified.gif',
+                                      height: 60.0,
+                                    ),
                                     Text("Your Transaction Is Complete"),
                                   ],
                                 ),
