@@ -2,7 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import './NewAccountDetails.dart';
 import './AccountDetails.dart';
+
 
 class TransferPage extends StatelessWidget {
   final money = Container(
@@ -412,7 +414,7 @@ class TransferPage extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => AccountDetails(),
+                                    builder: (context) => NewAccountDetails(),
                                   ),
                                 );
                               },
