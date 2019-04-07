@@ -35,9 +35,7 @@ class TransferPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30.0),
           ),
           contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30.0),
-          ),
+          border: OutlineInputBorder(),
         ),
       ),
     ),
@@ -49,10 +47,15 @@ class TransferPage extends StatelessWidget {
       autofocus: false,
       decoration: InputDecoration(
         hintText: 'Amount To Transfer',
+        enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(30.0),
+            borderSide: BorderSide(color: Color.fromRGBO(186, 228, 245, 0.5)),
+          ),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30.0),
-            borderSide: BorderSide(color: Color.fromRGBO(186, 228, 245, 0.5))),
+          borderRadius: BorderRadius.circular(30.0),
+          borderSide: BorderSide(color: Color.fromRGBO(186, 228, 245, 0.5)),
+        ),
       ),
     ),
   );
