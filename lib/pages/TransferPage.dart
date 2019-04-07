@@ -29,11 +29,14 @@ class TransferPage extends StatelessWidget {
             color: Colors.white,
             fontFamily: 'opensans',
           ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+                color: Color.fromRGBO(255, 255, 255, 1.0), width: 1.0),
+                borderRadius: BorderRadius.circular(30.0),
+          ),
           contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(30.0),
-            borderSide: BorderSide(
-                color: Colors.white, width: 1.0, style: BorderStyle.none),
           ),
         ),
       ),
