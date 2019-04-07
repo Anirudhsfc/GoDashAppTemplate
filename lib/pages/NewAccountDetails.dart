@@ -199,7 +199,7 @@ class NewAccountDetails extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.centerRight,
                         child: Text(
-                          "CAD 7,309.18",
+                          "CAD 7,209.18",
                           style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
                         ),
                       ),
