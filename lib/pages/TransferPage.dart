@@ -11,8 +11,8 @@ class TransferPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Transfers',
-           style: TextStyle(fontFamily: 'opensans', color: Colors.white),
-          ),
+          style: TextStyle(fontFamily: 'opensans', color: Colors.white),
+        ),
         backgroundColor: Color.fromRGBO(186, 228, 245, 1.0),
         elevation: 0.0,
       ),
@@ -68,26 +68,34 @@ class TransferPage extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                color: Color.fromRGBO(186, 228, 245, 1.0),
-                child: Column(
-                  children: <Widget>[
+                  color: Color.fromRGBO(186, 228, 245, 1.0),
+                  child: Column(children: <Widget>[
                     Container(
-                      margin: EdgeInsets.only(left: 85.0, right: 85.0, top: 15.0),
-                      padding: EdgeInsets.only(left :10.0, right: 10.0, top: 2.0, bottom: 2.0),
+                      margin:
+                          EdgeInsets.only(left: 85.0, right: 85.0, top: 15.0),
+                      padding: EdgeInsets.only(
+                          left: 10.0, right: 10.0, top: 2.0, bottom: 2.0),
                       decoration: const BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
-                          left: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
-                          right: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
-                          top: BorderSide(color: Color.fromRGBO(255, 255, 255, 1.0)),
+                          border: Border(
+                            bottom: BorderSide(
+                                color: Color.fromRGBO(255, 255, 255, 1.0)),
+                            left: BorderSide(
+                                color: Color.fromRGBO(255, 255, 255, 1.0)),
+                            right: BorderSide(
+                                color: Color.fromRGBO(255, 255, 255, 1.0)),
+                            top: BorderSide(
+                                color: Color.fromRGBO(255, 255, 255, 1.0)),
                           ),
-                          borderRadius: BorderRadius.all(const Radius.circular(30.0))
-                      ),
+                          borderRadius:
+                              BorderRadius.all(const Radius.circular(30.0))),
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
                           "Frequent Transfers",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 17.0, color: Colors.white),
+                          style: TextStyle(
+                              fontFamily: 'opensans',
+                              fontSize: 17.0,
+                              color: Colors.white),
                         ),
                       ),
                     ),
@@ -97,7 +105,11 @@ class TransferPage extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           "99",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 35.0, color: Colors.white, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontFamily: 'opensans',
+                              fontSize: 35.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -106,13 +118,14 @@ class TransferPage extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           "CAD >",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 24.0, color: Colors.white),
+                          style: TextStyle(
+                              fontFamily: 'opensans',
+                              fontSize: 24.0,
+                              color: Colors.white),
                         ),
                       ),
                     ),
-                  ]
-                )
-              ),
+                  ])),
             ),
             // Container(
             //   child: Container(
@@ -128,110 +141,136 @@ class TransferPage extends StatelessWidget {
               child: Container(
                 margin: EdgeInsets.only(top: 10.0),
                 padding: EdgeInsets.only(left: 15.0, right: 15.0),
-                child: Column(
-                  children: <Widget>[
-                    Expanded(
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.only(left: 10.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "From",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
-                            ),
+                child: Column(children: <Widget>[
+                  Expanded(
+                    child: Row(children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.only(left: 10.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "From",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 1.0),
+                                fontWeight: FontWeight.bold),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 100.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Savings Account (025-",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ]
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.only(left: 10.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Currency",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
-                            ),
+                      Container(
+                        padding: EdgeInsets.only(left: 100.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Savings Account (025-",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 0.4),
+                                fontWeight: FontWeight.bold),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 70.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "CAD",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ]
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.only(left: 10.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "To",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
-                            ),
+                    ]),
+                  ),
+                  Expanded(
+                    child: Row(children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.only(left: 10.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Currency",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 1.0),
+                                fontWeight: FontWeight.bold),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 130.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Savings Account (049-",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ]
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.only(left: 10.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Currency",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 1.0), fontWeight: FontWeight.bold),                        ),
-                            ),
+                      Container(
+                        padding: EdgeInsets.only(left: 70.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "CAD",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 0.4),
+                                fontWeight: FontWeight.bold),
                           ),
-                          Container(
-                            padding: EdgeInsets.only(left: 70.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                "Euro",
-                                style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(0, 0, 0, 0.4), fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
-                        ]
+                        ),
                       ),
-                    ),
-                  ]
-                ),
+                    ]),
+                  ),
+                  Expanded(
+                    child: Row(children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.only(left: 10.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "To",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 1.0),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 130.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Savings Account (049-",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 0.4),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                    ]),
+                  ),
+                  Expanded(
+                    child: Row(children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.only(left: 10.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Currency",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 1.0),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 70.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Euro",
+                            style: TextStyle(
+                                fontFamily: 'opensans',
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(0, 0, 0, 0.4),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ]),
               ),
             ),
             // Expanded(
@@ -244,76 +283,91 @@ class TransferPage extends StatelessWidget {
             //   ),
             // ),
             Container(
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    // margin: EdgeInsets.all(10.0),
-                    child: SizedBox(
-                      width: double.infinity,
-
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        child: Material(
-                          // borderRadius: BorderRadius.circular(30.0),
-                          shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
-                          color: Color.fromRGBO(230, 230, 230, 1.0),
-                          elevation: 5.0,
-                          child: MaterialButton(
-                            child: Text(
-                              "Cancel",
-                              style:
-                                  TextStyle(fontFamily: 'opensans', fontSize: 18.0),
-                            ),
-                            onPressed: () {
-                              Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => AccountDetails(),
-                                    ),
-                                  );
-                            },
-                            minWidth: 200.0,
-                            height: 42.0,
+              child: Row(children: <Widget>[
+                Expanded(
+                  // margin: EdgeInsets.all(10.0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16.0),
+                      child: Material(
+                        // borderRadius: BorderRadius.circular(30.0),
+                        shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
+                        color: Color.fromRGBO(230, 230, 230, 1.0),
+                        elevation: 5.0,
+                        child: MaterialButton(
+                          child: Text(
+                            "Cancel",
+                            style: TextStyle(
+                                fontFamily: 'opensans', fontSize: 18.0),
                           ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => AccountDetails(),
+                              ),
+                            );
+                          },
+                          minWidth: 200.0,
+                          height: 42.0,
                         ),
                       ),
                     ),
                   ),
-                  Expanded(
-                    // margin: EdgeInsets.all(10.0),
-                    child: SizedBox(
-                      width: double.infinity,
-
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        child: Material(
-                          // borderRadius: BorderRadius.circular(30.0),
-                          shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
-                          color: Color.fromRGBO(186, 228, 245, 1.0),
-                          elevation: 5.0,
-                          child: MaterialButton(
-                            child: Text(
-                              "Submit",
-                              style:
-                                  TextStyle(fontFamily: 'opensans', fontSize: 18.0),
-                            ),
-                            onPressed: () {
-                              Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => AccountDetails(),
-                                    ),
-                                  );
-                            },
-                            minWidth: 200.0,
-                            height: 42.0,
+                ),
+                Expanded(
+                  // margin: EdgeInsets.all(10.0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16.0),
+                      child: Material(
+                        // borderRadius: BorderRadius.circular(30.0),
+                        shadowColor: Color.fromRGBO(186, 228, 245, 0.5),
+                        color: Color.fromRGBO(186, 228, 245, 1.0),
+                        elevation: 5.0,
+                        child: MaterialButton(
+                          child: Text(
+                            "Submit",
+                            style: TextStyle(
+                                fontFamily: 'opensans', fontSize: 18.0),
                           ),
+                          onPressed: () {
+                            Future.delayed(
+                              Duration(milliseconds: 2700),
+                              () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => AccountDetails(),
+                                  ),
+                                );
+                              },
+                            );
+                            showDialog(
+                              context: context,
+                              child: CupertinoAlertDialog(
+                                title: Column(
+                                  children: <Widget>[
+                                     Image.asset(
+                                'assets/images/verified.gif',
+                                height: 60.0,
+                              ),
+                                    Text("Your Transaction Is Complete"),
+                                  ],
+                                ),
+                              ),
+                            );
+                          },
+                          minWidth: 200.0,
+                          height: 42.0,
                         ),
                       ),
                     ),
                   ),
-                ]
-              ),
+                ),
+              ]),
             ),
           ],
         ),

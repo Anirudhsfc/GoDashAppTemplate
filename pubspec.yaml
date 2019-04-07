@@ -44,6 +44,7 @@ flutter:
     - assets/images/logo.gif
     - assets/images/BiometricAuthLogo.png
     - assets/images/fingerprint.gif
+    - assets/images/verified.gif
   
   fonts:
     - family: opensans
