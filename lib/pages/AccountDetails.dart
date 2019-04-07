@@ -60,8 +60,11 @@ class AccountDetails extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
+      body: Column(
+        // child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Expanded(
               child: Container(
@@ -465,7 +468,7 @@ class AccountDetails extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      // ),
     );
   }
 }
