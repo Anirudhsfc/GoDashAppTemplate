@@ -208,21 +208,21 @@ class AccountDetails extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              child: Container(
-                padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
-                decoration: const BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
-                    ),
-                ),
-                child: Text(
-                  "The information is for reference and should not be regarded as a balance confirmation.",
-                  style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
-                  textAlign: TextAlign.justify,
-                ),
-              ),
-            ),
+            // Container(
+            //   child: Container(
+            //     padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
+            //     decoration: const BoxDecoration(
+            //       border: Border(
+            //         bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
+            //         ),
+            //     ),
+            //     child: Text(
+            //       "The information is for reference and should not be regarded as a balance confirmation.",
+            //       style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
+            //       textAlign: TextAlign.justify,
+            //     ),
+            //   ),
+            // ),
             Container(
               child: Container(
                 padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
@@ -242,7 +242,7 @@ class AccountDetails extends StatelessWidget {
             ),
             Container(
               child: Container(
-                padding: EdgeInsets.only(top: 17.0, bottom: 11.0, left: 15.0, right: 15.0),
+                padding: EdgeInsets.only(top: 14.0, bottom: 9.0, left: 15.0, right: 15.0),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -274,7 +274,7 @@ class AccountDetails extends StatelessWidget {
                                   },
                                   child: Icon(
                                     Icons.attach_money,
-                                    size: 50.0,
+                                    size: 40.0,
                                     color: Color.fromRGBO(0, 230, 118, 1.0),
                                   )
                                 ),
@@ -285,7 +285,7 @@ class AccountDetails extends StatelessWidget {
                                     alignment: Alignment.center,
                                     child: Text(
                                       "Transfers",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
@@ -298,7 +298,7 @@ class AccountDetails extends StatelessWidget {
                                 Container(
                                   child: Icon(
                                     Icons.credit_card,
-                                    size: 50.0,
+                                    size: 40.0,
                                     color: Color.fromRGBO(255, 215, 64, 1.0),
                                   )
                                 ),
@@ -309,7 +309,7 @@ class AccountDetails extends StatelessWidget {
                                     alignment: Alignment.center,
                                     child: Text(
                                       "Credit Cards",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
@@ -373,7 +373,7 @@ class AccountDetails extends StatelessWidget {
                                 Container(
                                   child: Icon(
                                     Icons.account_balance,
-                                    size: 50.0,
+                                    size: 40.0,
                                     color: Color.fromRGBO(255, 116, 116, 1.0),
                                   )
                                 ),
@@ -384,7 +384,7 @@ class AccountDetails extends StatelessWidget {
                                     alignment: Alignment.center,
                                     child: Text(
                                       "Loans",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
@@ -397,7 +397,7 @@ class AccountDetails extends StatelessWidget {
                                 Container(
                                   child: Icon(
                                     Icons.account_balance_wallet,
-                                    size: 50.0,
+                                    size: 40.0,
                                     color: Color.fromRGBO(178, 112, 0, 1.0),
                                   )
                                 ),
@@ -408,7 +408,7 @@ class AccountDetails extends StatelessWidget {
                                     alignment: Alignment.center,
                                     child: Text(
                                       "My Account",
-                                      style: TextStyle(fontFamily: 'opensans', fontSize: 16.0, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 )
