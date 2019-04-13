@@ -11,7 +11,7 @@ class NewAccountDetails extends StatelessWidget {
           'My Banking',
            style: TextStyle(fontFamily: 'opensans', color: Colors.white),
           ),
-        backgroundColor: Color.fromRGBO(186, 228, 245, 1.0),
+        backgroundColor: Color.fromRGBO(244, 67, 54, 1.0),
         elevation: 0.0,
       ),
       drawer: Drawer(
@@ -19,7 +19,7 @@ class NewAccountDetails extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 155.0,
-              color: Color.fromRGBO(186, 228, 245, 1.0),
+              color: Color.fromRGBO(244, 67, 54, 1.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Image.asset(
@@ -68,7 +68,7 @@ class NewAccountDetails extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Container(
-                color: Color.fromRGBO(186, 228, 245, 1.0),
+                color: Color.fromRGBO(244, 67, 54, 1.0),
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -123,7 +123,7 @@ class NewAccountDetails extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Account",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),                        ),
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(244, 67, 54, 1.0), fontWeight: FontWeight.bold),                        ),
                       ),
                     ),
                     Expanded(
@@ -132,7 +132,7 @@ class NewAccountDetails extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: Text(
                           "Current Balance",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(244, 67, 54, 1.0), fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
