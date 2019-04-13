@@ -36,10 +36,10 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
     return Scaffold(
       body: Center(
         child: AnimatedContainer(
-          child: Image.asset('assets/images/BEA.jpg'),
+          height: MediaQuery.of(context).size.height,
+          child: Image.asset('assets/images/BEA_Main.png'),
           duration: Duration(seconds: 1),
-          
-          
+          color: Color.fromRGBO(227, 17, 30, 1.0)
         ),
       ),
     );

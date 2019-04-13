@@ -69,7 +69,7 @@ class TransferPage extends StatelessWidget {
           'Transfers',
           style: TextStyle(fontFamily: 'opensans', color: Colors.white),
         ),
-        backgroundColor: Color.fromRGBO(244, 67, 54, 1.0),
+        backgroundColor: Color.fromRGBO(227, 17, 30, 1.0),
         elevation: 0.0,
       ),
       drawer: Drawer(
@@ -77,11 +77,13 @@ class TransferPage extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 155.0,
-              color: Color.fromRGBO(244, 67, 54, 1.0),
+              // color: Color.fromRGBO(244, 67, 54, 1.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Image.asset(
-                  'assets/images/logo.gif',
+                  'assets/images/BEA_Full.png',
+                  height: 200,
+                  width: 300,
                 ),
               ),
             ),
@@ -124,7 +126,7 @@ class TransferPage extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                color: Color.fromRGBO(244, 67, 54, 1.0),
+                color:Color.fromRGBO(227, 17, 30, 1.0),
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -366,7 +368,7 @@ class TransferPage extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 16.0),
                       child: Material(
                         // borderRadius: BorderRadius.circular(30.0),
-                        shadowColor: Color.fromRGBO(244, 67, 54, 0.5),
+                        shadowColor: Color.fromRGBO(227, 17, 30, 0.5),
                         color: Color.fromRGBO(230, 230, 230, 1.0),
                         elevation: 5.0,
                         child: MaterialButton(
@@ -398,8 +400,8 @@ class TransferPage extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 16.0),
                       child: Material(
                         // borderRadius: BorderRadius.circular(30.0),
-                        shadowColor: Color.fromRGBO(244, 67, 54, 0.5),
-                        color: Color.fromRGBO(244, 67, 54, 1.0),
+                        shadowColor: Color.fromRGBO(227, 17, 30, 0.5),
+                        color: Color.fromRGBO(227, 17, 30, 1.0),
                         elevation: 5.0,
                         child: MaterialButton(
                           child: Text(

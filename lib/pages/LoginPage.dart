@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(244, 67, 54, 1.0),
+        backgroundColor: Color.fromRGBO(227, 17, 30, 1.0),
         elevation: 0.0,
       ),
       drawer: Drawer(
@@ -17,13 +17,13 @@ class LoginPage extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 155.0,
-              color: Color.fromRGBO(244, 67, 54, 1.0),
+              // color: Color.fromRGBO(244, 67, 54, 1.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Image.asset(
-                  'assets/images/BeaLogo.png',
-                  height: 100,
-                  width: 200,
+                  'assets/images/BEA_Full.png',
+                  height: 200,
+                  width: 300,
                 ),
               ),
             ),
@@ -65,26 +65,12 @@ class LoginPage extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Container(
-                color: Color.fromRGBO(244, 67, 54, 1.0),
+                // color: Color.fromRGBO(244, 67, 54, 1.0),
                 child: Align(
                   alignment: Alignment.center,
-                  
                   child: Image.asset(
-                    'assets/images/BeaLogo.png',
-                    
-
-                    
+                    'assets/images/BEA_Full.png',
                   ),
-                  // child: Text(
-
-                  //   "SCB",
-                  //   style: TextStyle(
-                  //     fontSize: 30.0,
-                  //     fontStyle: FontStyle.normal,
-                  //     fontWeight: FontWeight.bold,
-
-                  //   ),
-                  // ),
                 ),
               ),
             ),
@@ -93,7 +79,7 @@ class LoginPage extends StatelessWidget {
                 margin: EdgeInsets.all(20.0),
                 child: Text(
                   "Log In With CyberBanking Details",
-                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0),
+                  style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(227, 17, 30, 1.0), fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -137,8 +123,8 @@ class LoginPage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 16.0),
                   child: Material(
                     borderRadius: BorderRadius.circular(30.0),
-                    shadowColor: Color.fromRGBO(244, 67, 54, 0.5),
-                    color: Color.fromRGBO(244, 67, 54, 1.0),
+                    shadowColor: Color.fromRGBO(227, 17, 30, 1.0),
+                    color: Color.fromRGBO(227, 17, 30, 1.0),
                     elevation: 5.0,
                     child: MaterialButton(
                       child: Text(
