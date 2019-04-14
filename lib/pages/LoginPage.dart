@@ -220,7 +220,7 @@ class LoginPage extends StatelessWidget {
                                 height: 40.0,
                               ),
                               Text("Touch ID for"),
-                              Text("SCB Login"),
+                              Text("BEA Login"),
                               Text("Authenticate with Touch ID"),
                             ],
                           ),
