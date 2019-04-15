@@ -37,9 +37,9 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       body: Center(
         child: AnimatedContainer(
           height: MediaQuery.of(context).size.height,
-          child: Image.asset('assets/images/BEA_Main.png'),
+          child: Image.asset('assets/images/GoDash.PNG'),
           duration: Duration(seconds: 1),
-          color: Color.fromRGBO(227, 17, 30, 1.0)
+          color: Color.fromRGBO(73, 77, 112, 1.0)
         ),
       ),
     );

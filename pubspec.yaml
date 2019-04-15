@@ -25,9 +25,14 @@ dependencies:
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.7.0"
   flutter_test:
     sdk: flutter
 
+flutter_icons:
+  image_path: "assets/images/GoDash.PNG"
+  android: true
+  ios: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
@@ -48,7 +53,7 @@ flutter:
     - assets/images/BEA_Main.png
     - assets/images/BeaLogo.png
     - assets/images/BEA_Full.png
-  
+    - assets/images/GoDash.PNG
   fonts:
     - family: opensans
       fonts:
