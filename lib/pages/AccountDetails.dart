@@ -11,7 +11,7 @@ class AccountDetails extends StatelessWidget {
           'My Banking',
            style: TextStyle(fontFamily: 'opensans', color: Colors.white),
           ),
-        backgroundColor: Color.fromRGBO(186, 228, 245, 1.0),
+        backgroundColor: Color.fromRGBO(227, 17, 30, 1.0),
         elevation: 0.0,
       ),
       drawer: Drawer(
@@ -19,11 +19,13 @@ class AccountDetails extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 155.0,
-              color: Color.fromRGBO(186, 228, 245, 1.0),
+              // color: Color.fromRGBO(244, 67, 54, 1.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Image.asset(
-                  'assets/images/logo.gif',
+                  'assets/images/BEA_Full.png',
+                  height: 200,
+                  width: 300,
                 ),
               ),
             ),
@@ -68,7 +70,7 @@ class AccountDetails extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Container(
-                color: Color.fromRGBO(186, 228, 245, 1.0),
+                color: Color.fromRGBO(227, 17, 30, 1.0),
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -102,15 +104,6 @@ class AccountDetails extends StatelessWidget {
                 )
               ),
             ),
-            // Container(
-            //   child: Container(
-            //     margin: EdgeInsets.only(top: 10.0),
-            //     child: Text(
-            //       "Account                               Current Balance",
-            //       style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),
-            //     ),
-            //   ),
-            // ),
             Container(
               child: Container(
                 margin: EdgeInsets.only(top: 10.0),
@@ -123,7 +116,7 @@ class AccountDetails extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: Text(
                           "Account",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),                        ),
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(227, 17, 30, 1.0), fontWeight: FontWeight.bold),                        ),
                       ),
                     ),
                     Expanded(
@@ -132,7 +125,7 @@ class AccountDetails extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: Text(
                           "Current Balance",
-                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(186, 228, 245, 1.0), fontWeight: FontWeight.bold),
+                          style: TextStyle(fontFamily: 'opensans', fontSize: 18.0, color: Color.fromRGBO(227, 17, 30, 1.0), fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -208,21 +201,6 @@ class AccountDetails extends StatelessWidget {
                 ),
               ),
             ),
-            // Container(
-            //   child: Container(
-            //     padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
-            //     decoration: const BoxDecoration(
-            //       border: Border(
-            //         bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.3))
-            //         ),
-            //     ),
-            //     child: Text(
-            //       "The information is for reference and should not be regarded as a balance confirmation.",
-            //       style: TextStyle(fontFamily: 'opensans', fontSize: 16.0),
-            //       textAlign: TextAlign.justify,
-            //     ),
-            //   ),
-            // ),
             Container(
               child: Container(
                 padding: EdgeInsets.only(top: 17.0, bottom: 17.0, left: 15.0, right: 15.0),
@@ -316,50 +294,6 @@ class AccountDetails extends StatelessWidget {
                               ]
                             )
                           ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
                         ]
                       ),
                     ),
@@ -415,50 +349,6 @@ class AccountDetails extends StatelessWidget {
                               ]
                             )
                           ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
-                          // Expanded(
-                          //   child: Column(
-                          //     children: <Widget>[
-                          //       Container(
-                          //         child: Icon(
-                          //           Icons.account_balance_wallet,
-                          //           size: 40.0,
-                          //         )
-                          //       ),
-                          //       Container(
-                          //         alignment: Alignment.center,
-                          //         child: Align(
-                          //           alignment: Alignment.center,
-                          //           child: Text(
-                          //             "My Account",
-                          //             style: TextStyle(fontFamily: 'opensans', fontSize: 14.0, fontWeight: FontWeight.bold),
-                          //           ),
-                          //         ),
-                          //       )
-                          //     ]
-                          //   )
-                          // ),
                         ]
                       ),
                     ),
