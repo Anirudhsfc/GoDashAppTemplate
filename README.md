@@ -1,4 +1,4 @@
-# spark_flutter
+# GoDash App Template
 
 A new Flutter project.
 
